@@ -1,6 +1,6 @@
 
 /******************************************************************************
-  FUNCIONES RECURSIVAS B¡SICAS en C/C++. Por: byDavid360
+  FUNCIONES RECURSIVAS B√ÅSICAS en C/C++. Por: byDavid360
 ******************************************************************************/
 
 #include<stdio.h>
@@ -12,14 +12,14 @@ using namespace std;
 int producto(int a, int b);                                 //Funcion que hace el producto de dos numeros a partir de sumas sucesivas
 int sumar_vector(int *v, int dim);                          //Funcion que suma los elementos de un vector de forma recursiva
 void imprimir_vector(int *v, int dim);                      //Funcion que imprime un vector de forma recursiva
-int sumar_n_primeros(int n);
+int sumar_n_primeros(int n);                                //Funcion que suma los n primeros numeros de forma recursiva
 int binario(int n);                                         //Funcion que pasa un numero decimal a binario de forma recursiva
 int invertir(int n);                                        //Funcion que invierte un numero (sus cifras)
 int potencia(int n, int pot);                               //Funcion que calcula n^potencia a partir de multiplicaciones de forma recursiva
 int division(int n, int divisor);                           //Funcion que divide dos numeros a partir de restas sucesivas de forma recursiva
 int buscar(int *v, int dim, int elemen);                    //Funcion que busca un elemento dentro de un vector de forma recursiva
 int cuentadigitos(int n);                                   //Funcion que cuenta las cifras de un numero de forma recursiva
-int busquedabinaria(int *v, int ini, int fin, int elemen);  //Algoritmo de busqueda binaria en un vector a partir de "divide y vencer·s" (el vector debe estar ordenado)
+int busquedabinaria(int *v, int ini, int fin, int elemen);  //Algoritmo de busqueda binaria en un vector a partir de "divide y vencer√°s" (el vector debe estar ordenado)
 int suma_binaria(int *v, int ini, int fin);                 //Algoritmo que suma los elementos de un vector usando busqueda binaria
 int suma_quitando_primero(int *v, int ini, int fin);        //Funcion que divide un vector ordenado y suma los valores de cada trozo exceptuando el primero de ellos en cada llamada recursiva
 int suma_digitos(int n);                                    //Funcion que suma los digitos de un numero de forma recursiva
@@ -206,7 +206,7 @@ int buscar(int *v, int dim, int elemen){
 
     //caso base o trivial
     if(dim == 0)
-        return -1; //retorna -1 si no est· el valor en el vector o si tiene dimension 0
+        return -1; //retorna -1 si no est√° el valor en el vector o si tiene dimension 0
 
     //caso general
     if(v[dim-1] == elemen)
